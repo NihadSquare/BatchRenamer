@@ -1,4 +1,4 @@
-# 🪄 Batch Renamer v1.8.5
+# 🖥 Batch Renamer v1.8.5
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
