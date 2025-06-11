@@ -23,12 +23,12 @@
 
 ---
 
-<p float="left">
-  <img src="screenshots/BR-Screenshot-1.jpg" width="200"/>
-  <img src="screenshots/BR-Screenshot-2.jpg" width="200"/>
-  <img src="screenshots/BR-Screenshot-3.jpg" width="200"/>
-  <img src="screenshots/BR-Screenshot-4.jpg" width="200"/>
-</p>
+<div align="center">
+  <img src="screenshots/BR-Screenshot-1.jpg" width="250"/>
+  <img src="screenshots/BR-Screenshot-2.jpg" width="250"/>
+  <img src="screenshots/BR-Screenshot-3.jpg" width="250"/>
+  <img src="screenshots/BR-Screenshot-4.jpg" width="250"/>
+</div>
 
 
 ## 🖥 Installation
