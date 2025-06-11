@@ -22,6 +22,7 @@
 - 🎨 Branded, single-window modern GUI
 
 ---
+SCREENSHOTS
 <div align="center">
   <img src="https://github.com/NihadSquare/BatchRenamer/blob/f8286d5d0e46cb509f1198b9523e695115b4545a/Screenshots/BR-Screenshot-3.jpg" width="230"/>
   <img src="https://github.com/NihadSquare/BatchRenamer/blob/f8286d5d0e46cb509f1198b9523e695115b4545a/Screenshots/BR-Screenshot-2.jpg" width="230"/>
