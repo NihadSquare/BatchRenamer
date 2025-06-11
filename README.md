@@ -23,6 +23,9 @@
 
 ---
 
+![Screenshot Description](/batchrenamer.ico)
+
+
 ## 🖥 Installation
 
 ### 🔧 Requirements (For Python users)
