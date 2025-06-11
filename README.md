@@ -23,7 +23,7 @@
 
 ---
 
-![Screenshot Description](/batchrenamer.ico)
+![Screenshot Description](BatchRenamer.ico)
 
 
 ## 🖥 Installation
