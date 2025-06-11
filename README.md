@@ -35,6 +35,8 @@
 ## 🖥 Installation
 
 ### 🔧 Requirements (For Python users)
+Batch Renamer doesn't require installation, and can be run directly from a file or directory. It's a portable application. This application is self-contained, meaning it includes all the necessary files within a single folder and can run without modifying system settings or needing an installation process.
+
 If you want to run the `.py` version:
 ```bash
 pip install pillow
