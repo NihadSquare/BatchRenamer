@@ -83,4 +83,3 @@ BEST PRACTICES
 SUPPORT
 -------
 GitHub: https://github.com/NihadSquare
-Email: your@email.com
