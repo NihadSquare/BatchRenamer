@@ -34,6 +34,9 @@
 
 ## 🖥 Installation
 
+If BatchRenamer_v1.8.5.exe doesn't work in you computer then you can use <b>BatchRenamer_v1.8.5.py</b>(build>BatchRenamer_v1.8.5.py).
+Make sure your pc must have Python installed.
+
 ### 🔧 Requirements (For Python users)
 Batch Renamer doesn't require installation, and can be run directly from a file or directory. It's a portable application. This application is self-contained, meaning it includes all the necessary files within a single folder and can run without modifying system settings or needing an installation process.
 
