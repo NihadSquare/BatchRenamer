@@ -34,7 +34,7 @@
 
 ## 🖥 Installation
 
-If BatchRenamer_v1.8.5.exe doesn't work in you computer then you can use <b>BatchRenamer_v1.8.5.py</b>(build>BatchRenamer_v1.8.5.py).
+If BatchRenamer_v1.8.5.exe doesn't work in you computer then you can use <b>BatchRenamer_v1.8.5.py</b>
 Make sure your pc must have Python installed.
 
 ### 🔧 Requirements (For Python users)
