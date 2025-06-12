@@ -1,0 +1,86 @@
+USER GUIDE: Batch Renamer v1.8.5
+================================
+
+Developer: Nihad Square
+Platform: Windows
+GitHub: https://github.com/NihadSquare
+
+INTRODUCTION
+------------
+Batch Renamer is a modern, user-friendly tool designed to rename multiple files at once with advanced controls such as serial numbering, character replacement, cleanup features, and preview mode. This guide explains how to use each feature effectively.
+
+GETTING STARTED
+---------------
+1. Launch the application (`BatchRenamer.exe` or Python version).
+2. Click "Select Folder" to choose the folder containing files you want to rename.
+3. Once selected, the folder path will appear at the top of the window.
+
+FEATURES & OPTIONS
+------------------
+
+1. CHARACTER TO REMOVE / REPLACE
+   - Use the first input to define any character or string you wish to remove.
+   - Use the second input to define what it should be replaced with.
+   - Leave empty if you only want to remove characters.
+
+2. ADD SERIAL NUMBER
+   - Enable this checkbox to add a numeric serial to each file name.
+   - Set the "Start From" number (e.g., 1, 10).
+   - Serial is added after the name (e.g., `file 1.jpg`).
+   - Useful for ordered naming (e.g., Product 1, Product 2, ...).
+
+3. COMMON NAME
+   - Enter a single name that will replace each file's base name.
+   - When used with serial, filenames become: `CommonName 1.jpg`, `CommonName 2.jpg`.
+
+4. AUTO CLEANUP
+   - When checked, the app will automatically:
+     - Remove extra spaces
+     - Clean up dots, underscores, or special symbols
+     - Trim file name spacing
+
+5. INCLUDE SUBFOLDERS
+   - Check this to include files in all nested subdirectories.
+
+6. FILE TYPE FILTER
+   - Select which file types to include:
+     - All
+     - Images (.png, .jpg, etc.)
+     - Videos (.mp4, .mov, etc.)
+     - Documents (.pdf, .docx, etc.)
+
+7. SAVE TO NEW FOLDER
+   - When enabled, renamed files will be saved in a separate folder inside the selected directory (`RenamedFiles/`).
+
+8. PREVIEW BUTTON
+   - Generates a side-by-side list of:
+     - Current file names
+     - What the new names will be
+   - No files are changed during preview.
+
+9. RENAME FILES
+   - Applies the changes.
+   - A summary will be shown after the process completes.
+   - If a file name already exists, `$` is appended automatically to avoid conflicts.
+
+10. UNDO
+    - Reverts the last rename session using saved history.
+    - Undo is only available for the most recent operation.
+
+MENU BUTTON
+-----------
+Located at the top-right corner:
+- About: Opens the GitHub project page
+- Tutorial: Opens a usage video or documentation
+- Contact: Opens your default email client to contact the developer
+
+BEST PRACTICES
+--------------
+- Always run PREVIEW before renaming to avoid unwanted changes.
+- Use NEW FOLDER option when testing to preserve original files.
+- Keep backup of important files before using mass rename tools.
+
+SUPPORT
+-------
+GitHub: https://github.com/NihadSquare
+Email: your@email.com
