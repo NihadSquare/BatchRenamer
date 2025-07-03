@@ -1,4 +1,4 @@
-# 🖥 Batch Renamer v1.8.5
+# 🖥 Batch Renamer v1.9
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
@@ -24,10 +24,7 @@
 ---
 ## 🖼 SCREENSHOTS
 <div align="center">
-  <img src="https://github.com/NihadSquare/BatchRenamer/blob/f8286d5d0e46cb509f1198b9523e695115b4545a/Screenshots/BR-Screenshot-3.jpg" width="230"/>
-  <img src="https://github.com/NihadSquare/BatchRenamer/blob/f8286d5d0e46cb509f1198b9523e695115b4545a/Screenshots/BR-Screenshot-2.jpg" width="230"/>
-  <img src="https://github.com/NihadSquare/BatchRenamer/blob/f8286d5d0e46cb509f1198b9523e695115b4545a/Screenshots/BR-Screenshot-1.jpg" width="230"/>
-  <img src="https://github.com/NihadSquare/BatchRenamer/blob/f8286d5d0e46cb509f1198b9523e695115b4545a/Screenshots/BR-Screenshot-4.jpg" width="230"/>
+  <img src="https://github.com/NihadSquare/BatchRenamer/blob/f8286d5d0e46cb509f1198b9523e695115b4545a/Screenshots/BR-Screenshot-5.jpg" width="230"/>
 </div>
 
 
