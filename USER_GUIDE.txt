@@ -1,4 +1,4 @@
-USER GUIDE: Batch Renamer v1.8.5
+USER GUIDE: Batch Renamer v1.9
 ================================
 
 Developer: Nihad Square
@@ -12,7 +12,7 @@ Batch Renamer is a modern, user-friendly tool designed to rename multiple files 
 GETTING STARTED
 ---------------
 1. Launch the application (`BatchRenamer.exe` or Python version).
-2. Click "Select Folder" to choose the folder containing files you want to rename.
+2. Click "Select Folder" to choose the folder containing the files you want to rename.
 3. Once selected, the folder path will appear at the top of the window.
 
 FEATURES & OPTIONS
@@ -55,7 +55,7 @@ FEATURES & OPTIONS
 8. PREVIEW BUTTON
    - Generates a side-by-side list of:
      - Current file names
-     - What the new names will be
+     - What will the new names be
    - No files are changed during preview.
 
 9. RENAME FILES
@@ -78,7 +78,7 @@ BEST PRACTICES
 --------------
 - Always run PREVIEW before renaming to avoid unwanted changes.
 - Use NEW FOLDER option when testing to preserve original files.
-- Keep backup of important files before using mass rename tools.
+- Keep a backup of important files before using mass rename tools.
 
 SUPPORT
 -------
