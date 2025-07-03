@@ -4,7 +4,7 @@
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
 ![Made by](https://img.shields.io/badge/Made%20By-NihadSquare-blue)
 
-> A modern, easy-to-use batch file renaming tool with preview, auto-cleanup, serial naming, undo support, and more — built in Python for Windows.
+> A modern, easy-to-use batch file renaming tool with preview, auto-cleanup, serial naming, undo support, and more — built in Python for Windows. And totally <b>FREE</b> to use.
 
 ---
 
@@ -24,14 +24,14 @@
 ---
 ## 🖼 SCREENSHOTS
 <div align="center">
-  <img src="https://github.com/NihadSquare/BatchRenamer/blob/v1.9/Screenshots/BR-Screenshot-5.jpg" width="230"/>
+  <img src="https://github.com/NihadSquare/BatchRenamer/blob/v1.9/Screenshots/BR-Screenshot-5.jpg" width="500"/>
 </div>
 
 
 
 ## 🖥 Installation
 No installation required.
-Double-click <b>BatchRenamer_v1.9.py</b> and use it.
+Double-click <b>BatchRenamer_v1.9.py</b> and use it. |
 Make sure your pc must have Python installed.
 
 ### 🔧 Requirements (For Python users)
