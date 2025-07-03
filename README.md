@@ -24,7 +24,10 @@
 ---
 ## 🖼 SCREENSHOTS
 <div align="center">
-  <img src="https://github.com/NihadSquare/BatchRenamer/blob/v1.8.5/Screenshots/BR-Screenshot-5.jpg" width="230"/>
+  <img src="https://github.com/NihadSquare/BatchRenamer/blob/v1.8.5/Screenshots/BR-Screenshot-3.jpg" width="230"/>
+  <img src="https://github.com/NihadSquare/BatchRenamer/blob/v1.8.5/Screenshots/BR-Screenshot-1.jpg" width="230"/>
+  <img src="https://github.com/NihadSquare/BatchRenamer/blob/v1.8.5/Screenshots/BR-Screenshot-2.jpg" width="230"/>
+  <img src="https://github.com/NihadSquare/BatchRenamer/blob/v1.8.5/Screenshots/BR-Screenshot-4.jpg" width="230"/>
 </div>
 
 
