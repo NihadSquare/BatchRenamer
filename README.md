@@ -24,14 +24,14 @@
 ---
 ## 🖼 SCREENSHOTS
 <div align="center">
-  <img src="https://github.com/NihadSquare/BatchRenamer/blob/v1.8.5/Screenshots/BR-Screenshot-5.jpg" width="230"/>
+  <img src="https://github.com/NihadSquare/BatchRenamer/blob/v1.9/Screenshots/BR-Screenshot-5.jpg" width="230"/>
 </div>
 
 
 
 ## 🖥 Installation
-
-If BatchRenamer_v1.8.5.exe doesn't work in you computer then you can use <b>BatchRenamer_v1.9.py</b>
+No installation required.
+Double-click <b>BatchRenamer_v1.9.py</b> and use it.
 Make sure your pc must have Python installed.
 
 ### 🔧 Requirements (For Python users)
