@@ -30,13 +30,17 @@
 
 
 ## 🖥 Installation
+Batch Renamer doesn't require installation, and can be run directly from a file or directory. It's a portable application. This application is self-contained, meaning it includes all the necessary files within a single folder and can run without modifying system settings or needing an installation process.
+
 No installation required.
 Double-click <b>BatchRenamer_v1.9.py</b> and use it. |
 Make sure your pc must have Python installed.
 
-### 🔧 Requirements (For Python users)
-Batch Renamer doesn't require installation, and can be run directly from a file or directory. It's a portable application. This application is self-contained, meaning it includes all the necessary files within a single folder and can run without modifying system settings or needing an installation process.
+### 🔧 Requirements
+- **Python 3.8+**
+- 10MB free disk space
 
-If you want to run the `.py` version:
+If you want to run the `.py` version from the terminal:
 ```bash
 pip install pillow
+python BatchRenamer.py
