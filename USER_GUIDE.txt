@@ -1,85 +1,231 @@
-USER GUIDE: Batch Renamer v1.9
-================================
+# USER GUIDE: Batch Renamer v2.7
 
-Developer: Nihad Square
-Platform: Windows
-GitHub: https://github.com/NihadSquare
+**Developer**: Nihad Square  
+**Platform**: Windows 10/11  
+**Version**: 2.7.10  
+**GitHub**: https://github.com/NihadSquare/BatchRenamer
 
-INTRODUCTION
-------------
-Batch Renamer is a modern, user-friendly tool designed to rename multiple files at once with advanced controls such as serial numbering, character replacement, cleanup features, and preview mode. This guide explains how to use each feature effectively.
+---
 
-GETTING STARTED
----------------
-1. Launch the application (`BatchRenamer.exe` or Python version).
-2. Click "Select Folder" to choose the folder containing the files you want to rename.
-3. Once selected, the folder path will appear at the top of the window.
+## INTRODUCTION
 
-FEATURES & OPTIONS
-------------------
+Batch Renamer v2.7 is a professional-grade file and folder management tool that goes beyond simple renaming. With advanced pattern matching, CSV integration, comprehensive analytics, and dual-mode operation, it transforms how you organize digital assets. This guide covers all new features and enhanced functionality.
 
-1. CHARACTER TO REMOVE / REPLACE
-   - Use the first input to define any character or string you wish to remove.
-   - Use the second input to define what it should be replaced with.
-   - Leave empty if you only want to remove characters.
+---
 
-2. ADD SERIAL NUMBER
-   - Enable this checkbox to add a numeric serial to each file name.
-   - Set the "Start From" number (e.g., 1, 10).
-   - Serial is added after the name (e.g., `file 1.jpg`).
-   - Useful for ordered naming (e.g., Product 1, Product 2, ...).
+## GETTING STARTED
 
-3. COMMON NAME
-   - Enter a single name that will replace each file's base name.
-   - When used with serial, filenames become: `CommonName 1.jpg`, `CommonName 2.jpg`.
+### Launching the Application
+1. **Standalone Version**: Double-click `BatchRenamer.exe`
+2. **Python Version**: Run `python BatchRenamer.py` (requires Python 3.8+)
 
-4. AUTO CLEANUP
-   - When checked, the app will automatically:
-     - Remove extra spaces
-     - Clean up dots, underscores, or special symbols
-     - Trim file name spacing
+### Initial Setup
+1. Click **"Browse"** to select your target folder
+2. Choose between **📄 File** or **📁 Folder** mode using the radio buttons
+3. The file list will automatically populate with a live preview
 
-5. INCLUDE SUBFOLDERS
-   - Check this to include files in all nested subdirectories.
+---
 
-6. FILE TYPE FILTER
-   - Select which file types to include:
-     - All
-     - Images (.png, .jpg, etc.)
-     - Videos (.mp4, .mov, etc.)
-     - Documents (.pdf, .docx, etc.)
+## CORE RENAMING MODES
 
-7. SAVE TO NEW FOLDER
-   - When enabled, renamed files will be saved in a separate folder inside the selected directory (`RenamedFiles/`).
+### 1. 🆕 New Name & Serial Tab
+**Perfect for: Product catalogs, photo sequences, organized collections**
 
-8. PREVIEW BUTTON
-   - Generates a side-by-side list of:
-     - Current file names
-     - What will the new names be
-   - No files are changed during preview.
+- **Common Name**: Base name for all files (e.g., "Vacation_")
+- **Serial Number**: 
+  - ✅ Enable/disable with the "Serial" checkbox
+  - **Start From**: Beginning number (1, 100, etc.)
+  - **Position**: Before or after the common name
+  - **Format**: 
+    - Numeric: 1, 01, 001, 0001
+    - Letters: A, a (A, B, C... Z, AA, AB...)
+    - Roman: I, i (I, II, III, IV...)
 
-9. RENAME FILES
-   - Applies the changes.
-   - A summary will be shown after the process completes.
-   - If a file name already exists, `$` is appended automatically to avoid conflicts.
+*Example: "Photo_001.jpg", "Photo_002.jpg"*
 
-10. UNDO
-    - Reverts the last rename session using saved history.
-    - Undo is only available for the most recent operation.
+### 2. 🔤 Character Cleanup Tab
+**Perfect for: Fixing messy filenames, removing special characters**
 
-MENU BUTTON
------------
-Located at the top-right corner:
-- About: Opens the GitHub project page
-- Tutorial: Opens a usage video or documentation
-- Contact: Opens your default email client to contact the developer
+- **Characters to Remove**: Specific characters to delete
+- **Replace With**: Replacement character (space, dash, or remove entirely)
+- **✅ Auto Cleanup**: Automatically removes multiple spaces, dots, and symbols
 
-BEST PRACTICES
---------------
-- Always run PREVIEW before renaming to avoid unwanted changes.
-- Use NEW FOLDER option when testing to preserve original files.
-- Keep a backup of important files before using mass rename tools.
+*Example: "file--name..jpg" → "file-name.jpg"*
 
-SUPPORT
--------
-GitHub: https://github.com/NihadSquare
+### 3. 📝 Word Cleanup Tab
+**Perfect for: Removing watermarks, brand names, unwanted text**
+
+- **Words to Remove**: Comma-separated list (e.g., "copy, watermark, draft")
+- **Replace With**: Replacement text
+- **Conflict Symbol**: Character added if name conflicts occur (default: $)
+
+*Example: "document_copy_final.pdf" → "document_final.pdf"*
+
+### 4. 🎯 Pattern Tab (NEW)
+**Perfect for: Professional workflows, metadata-based naming**
+
+Insert placeholders using the **"Insert Placeholder ▼"** button:
+
+**Basic Placeholders:**
+- `{name}` - Original filename
+- `{ext}` - File extension
+- `{counter}` - Sequential number
+- `{random_str}` - Random 4-character string
+
+**File Metadata:**
+- `{size_kb}` - File size in KB
+- `{date_modified}` - Last modified date
+- `{parent_folder}` - Containing folder name
+
+**Date & Time:**
+- `{year}`, `{month_Jan}`, `{month_01}`, `{day}`
+- `{time_24hr}`, `{time_12hr}`
+- Presets: `{Date_YMD}`, `{Timestamp1}`, etc.
+
+**Media Metadata** (if available):
+- `{date_taken}`, `{camera_model}`, `{width}x{height}`
+- `{artist}`, `{title}`, `{album}`
+
+*Example Pattern: `{parent_folder}_{year}_{counter}{ext}`  
+Result: `Vacation_2024_001.jpg`*
+
+### 5. 📊 CSV-Based Tab (NEW)
+**Perfect for: Bulk operations, spreadsheet integration**
+
+1. Click **"Import CSV"** to load your spreadsheet
+2. Select the appropriate **Column** containing new names
+3. Files will match based on original names or fuzzy matching
+
+**CSV Format:**
+```
+original_name,new_name
+IMG_1234.jpg,Product Shot A.jpg
+document.pdf,Processed Document.pdf
+```
+
+---
+
+## ADVANCED FEATURES
+
+### 📁 Dual Mode Operation
+- **File Mode**: Traditional file renaming with file type filtering
+- **Folder Mode**: Rename entire folders and subfolders
+
+### 🎨 Theme System
+- Toggle between **Dark** (default) and **Light** themes
+- Use `Ctrl+D` or click the theme button (🌙/🔅)
+
+### 🔍 Smart Selection & Filtering
+- **Checkbox System**: Select individual files to rename
+- **Search Box**: Filter files by name in real-time
+- **Status Filter**: Show only Changed, Conflict, or Unchanged files
+
+### 📈 File Statistics (NEW)
+Click the **"📊"** button for comprehensive analytics:
+- **Storage Summary**: Total size, file counts, average sizes
+- **File Type Analysis**: Breakdown by extension and category
+- **Size Distribution**: Visual charts of file sizes
+- **Content Analytics**: Media files, documents, and efficiency metrics
+
+### 💾 Export Capabilities
+- **Export CSV**: Save rename previews for documentation
+- **Copy Names**: Right-click any file to copy its name
+
+---
+
+## WORKFLOW OPTIMIZATION
+
+### Filters & Options Panel
+- **File Types**: Filter by specific extensions or "All Files"
+- **Case Conversion**: Change text case (lowercase, UPPERCASE, Title Case)
+- **Change Extension**: Modify file extensions while keeping names
+- **Skip System Files**: Protect hidden and system files
+- **Subfolders**: Include files from nested directories
+- **Save in Folder**: Create copies in "RenamedFiles/" folder
+
+### Context Menu (Right-Click)
+- **🔴 Preview**: Open file/folder (files only)
+- **📋 Copy Filename**: Copy to clipboard
+- **📁 Open Location**: Open in File Explorer
+- **ℹ️ Properties**: View detailed file information
+
+---
+
+## KEYBOARD SHORTCUTS
+
+| Shortcut | Action |
+|----------|--------|
+| `Ctrl+O` | Select Folder |
+| `Ctrl+I` | Import CSV |
+| `Ctrl+P` | Preview Renames |
+| `Ctrl+R` | Execute Rename |
+| `Ctrl+Z` | Undo |
+| `Ctrl+Y` | Redo |
+| `Ctrl+D` | Toggle Dark Mode |
+| `F1` | Show Shortcuts Help |
+| `Tab` | Next Field |
+| `Shift+Tab` | Previous Field |
+| `Esc` | Clear Field / Deselect All |
+
+---
+
+## BEST PRACTICES
+
+### 🛡️ Safety First
+1. **Always Preview**: Use the live preview to verify changes
+2. **Selective Renaming**: Use checkboxes to rename only specific files
+3. **Test with Copies**: Enable "Save in Folder" when testing new patterns
+4. **Backup Important Files**: Keep backups before major operations
+
+### ⚡ Efficiency Tips
+1. **Use Patterns** for consistent, metadata-driven naming
+2. **Leverage CSV** for large, predefined rename operations
+3. **Combine Methods**: Use character cleanup with serial numbering
+4. **Save Configurations**: Note successful pattern combinations for reuse
+
+### 🔧 Advanced Workflows
+1. **Photo Organization**: Use `{date_taken}_{camera_model}_{counter}`
+2. **Document Management**: `{year}-{month_01}-{day}_{parent_folder}_{name}`
+3. **Product Catalogs**: `Product_{counter}_{size_kb}KB{ext}`
+4. **Archive Preparation**: `{year}_{random_str}_{original_name}`
+
+---
+
+## TROUBLESHOOTING
+
+### Common Issues
+- **Icons Not Showing**: Ensure `resources/` folder is in the same directory as `.exe`
+- **CSV Import Fails**: Verify CSV format and column selection
+- **Patterns Not Working**: Check placeholder syntax and available metadata
+- **Undo Not Available**: Undo only works for the most recent operation
+
+### Performance
+- **Large Folders**: Application handles thousands of files efficiently
+- **Live Preview**: May slow with 10,000+ files - use filters to manage
+- **Memory Usage**: Optimized for typical usage scenarios
+
+---
+
+## SUPPORT & RESOURCES
+
+- **GitHub Repository**: https://github.com/NihadSquare/BatchRenamer
+- **Issue Reporting**: Use GitHub Issues for bugs and feature requests
+- **Documentation**: Additional help within application menus
+
+---
+
+## VERSION HISTORY
+
+### v2.7 Highlights
+- Pattern-based renaming with metadata placeholders
+- CSV import/export functionality
+- Dark/Light theme system
+- Comprehensive file statistics
+- Folder renaming support
+- Enhanced serial number formats
+- Right-click context menus
+- Improved selection system
+
+---
+
+**Batch Renamer v2.7** - *Professional file management made simple and powerful*
