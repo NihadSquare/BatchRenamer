@@ -71,7 +71,7 @@
 
 ## 🖼 SCREENSHOTS
 <div align="center">
-  <img src="https://github.com/NihadSquare/BatchRenamer/blob/main/Screenshots/BR-Screenshot-5.jpg" width="500"/>
+  <img src="https://github.com/NihadSquare/BatchRenamer/blob/v2.7/Screenshots/BRS1.jpg" width="500"/>
   <p><em>Modern interface with dark theme and advanced controls</em></p>
 </div>
 
