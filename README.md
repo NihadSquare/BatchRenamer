@@ -1,6 +1,6 @@
 # 🖥 Batch Renamer v2.7
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![License](https://img.shields.io/badge/license-Commercial-red.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
 ![Made by](https://img.shields.io/badge/Made%20By-NihadSquare-blue)
 ![Version](https://img.shields.io/badge/version-2.7.10-green)
