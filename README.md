@@ -32,7 +32,7 @@
 ## 🖼 Screenshots
 <div align="center">
   <img src="https://github.com/NihadSquare/BatchRenamer/blob/v2.6.2/Screenshots/BR_SS1.jpg" width="500"/>
-  <p><em>Light Mode Interface</em></p>
+  <p><em>Dark Mode Interface</em></p>
 </div>
 
 ---
