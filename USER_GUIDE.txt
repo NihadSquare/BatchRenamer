@@ -1,85 +1,196 @@
-USER GUIDE: Batch Renamer v1.9
-================================
+# USER GUIDE: Batch Renamer v2.6.2
 
-Developer: Nihad Square
-Platform: Windows
-GitHub: https://github.com/NihadSquare
+**Developer**: Nihad Square  
+**Platform**: Windows (Standalone EXE)  
+**GitHub**: https://github.com/NihadSquare/BatchRenamer/tree/v2.6.2  
 
-INTRODUCTION
-------------
-Batch Renamer is a modern, user-friendly tool designed to rename multiple files at once with advanced controls such as serial numbering, character replacement, cleanup features, and preview mode. This guide explains how to use each feature effectively.
+---
 
-GETTING STARTED
----------------
-1. Launch the application (`BatchRenamer.exe` or Python version).
-2. Click "Select Folder" to choose the folder containing the files you want to rename.
-3. Once selected, the folder path will appear at the top of the window.
+## INTRODUCTION
 
-FEATURES & OPTIONS
-------------------
+Batch Renamer v2.6.2 is a comprehensive file renaming tool that allows you to rename multiple files simultaneously with advanced features like real-time preview, dark/light themes, advanced filtering, undo/redo support, and much more. This guide will help you master all the features efficiently.
 
-1. CHARACTER TO REMOVE / REPLACE
-   - Use the first input to define any character or string you wish to remove.
-   - Use the second input to define what it should be replaced with.
-   - Leave empty if you only want to remove characters.
+---
 
-2. ADD SERIAL NUMBER
-   - Enable this checkbox to add a numeric serial to each file name.
-   - Set the "Start From" number (e.g., 1, 10).
-   - Serial is added after the name (e.g., `file 1.jpg`).
-   - Useful for ordered naming (e.g., Product 1, Product 2, ...).
+## GETTING STARTED
 
-3. COMMON NAME
-   - Enter a single name that will replace each file's base name.
-   - When used with serial, filenames become: `CommonName 1.jpg`, `CommonName 2.jpg`.
+### 🚀 Launching the Application
+1. **Double-click** `BatchRenamer_v2.6.2.exe` (no installation required)
+2. The application opens with **Dark Theme** by default
+3. Use the **🌙/🔅** button to toggle between dark and light themes
 
-4. AUTO CLEANUP
-   - When checked, the app will automatically:
-     - Remove extra spaces
-     - Clean up dots, underscores, or special symbols
-     - Trim file name spacing
+### 📁 Selecting Files
+1. Click **"Browse"** to select your target folder
+2. The folder path will display in the top entry field
+3. Files from the selected folder will appear in the preview panel
 
-5. INCLUDE SUBFOLDERS
-   - Check this to include files in all nested subdirectories.
+---
 
-6. FILE TYPE FILTER
-   - Select which file types to include:
-     - All
-     - Images (.png, .jpg, etc.)
-     - Videos (.mp4, .mov, etc.)
-     - Documents (.pdf, .docx, etc.)
+## FEATURES & OPTIONS
 
-7. SAVE TO NEW FOLDER
-   - When enabled, renamed files will be saved in a separate folder inside the selected directory (`RenamedFiles/`).
+### 🎯 SECTION 1: FOLDER SELECTION
+- **Browse Button**: Select your target folder
+- **✅ Include Subfolders**: Toggle to process files in subdirectories
+- **✅ Save in Folder**: Creates copies in "RenamedFiles" folder instead of modifying originals
 
-8. PREVIEW BUTTON
-   - Generates a side-by-side list of:
-     - Current file names
-     - What will the new names be
-   - No files are changed during preview.
+### 🔧 SECTION 2: CHARACTER CLEANUP
+**Character-Based Operations:**
+- **Characters to Remove**: Enter characters to delete (e.g., `-_`)
+- **Replace With**: What to replace them with (e.g., space)
+- **Auto Cleanup**: Automatically removes multiple spaces/dots/symbols
 
-9. RENAME FILES
-   - Applies the changes.
-   - A summary will be shown after the process completes.
-   - If a file name already exists, `$` is appended automatically to avoid conflicts.
+**Word-Based Operations:**
+- **Words to Remove**: Enter comma-separated words (e.g., `copy, image, photo`)
+- **Replace With**: Replacement text for removed words
+- **Conflict Symbol**: Symbol added if name conflicts occur (default: `$`)
 
-10. UNDO
-    - Reverts the last rename session using saved history.
-    - Undo is only available for the most recent operation.
+### 🏷️ SECTION 3: NEW NAMING OPTIONS
+**Common Name:**
+- Replaces all filenames with your specified name
+- Combine with serial numbers for organized naming
 
-MENU BUTTON
------------
-Located at the top-right corner:
-- About: Opens the GitHub project page
-- Tutorial: Opens a usage video or documentation
-- Contact: Opens your default email client to contact the developer
+**Serial Numbering:**
+- **Add Serial**: Enable sequential numbering
+- **Start From**: Set starting number (e.g., 1, 100)
+- **Position**: Choose "Before" or "After" the name
+- **Format**: Select padding format (1, 01, 001, 0001)
 
-BEST PRACTICES
---------------
-- Always run PREVIEW before renaming to avoid unwanted changes.
-- Use NEW FOLDER option when testing to preserve original files.
-- Keep a backup of important files before using mass rename tools.
+### ⚙️ SECTION 4: FILE TYPE AND FILTERS
+**File Types Filter:**
+- **All Files**: Process every file type
+- **Specific Extensions**: Filter by .png, .jpg, .pdf, .docx, etc.
 
-SUPPORT
--------
-GitHub: https://github.com/NihadSquare
+**Case Conversion:**
+- **No Change**: Keep original case
+- **lowercase**: Convert all to lowercase
+- **UPPERCASE**: Convert all to uppercase
+- **Title Case**: Capitalize Each Word
+- **Sentence case**: Capitalize first letter only
+
+**Extension Changing:**
+- Convert all files to selected extension
+- Options: .jpg, .png, .txt, .pdf, etc.
+
+**Skip System Files:**
+- Enabled by default to protect hidden/system files
+
+---
+
+## WORKFLOW & BEST PRACTICES
+
+### 🔄 Recommended Workflow
+1. **Select Folder** → Choose your target directory
+2. **Configure Options** → Set up renaming rules
+3. **Preview** → Review changes in real-time
+4. **Execute** → Click "Rename 🚀" to apply
+5. **Verify** → Check results and use Undo if needed
+
+### ✅ Best Practices
+- **Always preview** before renaming to avoid unwanted changes
+- **Use "Save in Folder"** when testing to preserve originals
+- **Start with small batches** when trying new rules
+- **Keep backups** of important files before bulk operations
+- **Use file type filtering** to target specific file types
+
+---
+
+## ADVANCED FEATURES
+
+### 👁️ REAL-TIME PREVIEW
+- **Automatic Updates**: Changes appear instantly as you type
+- **Color Coding**: 
+  - 🟢 Green = File will be renamed
+  - 🔴 Red = No changes (original name kept)
+- **File Type Emojis**: Visual indicators for different file types
+- **Serial Numbers**: Shows exact numbering sequence
+
+### ⏱️ PROGRESS TRACKING
+- **Progress Bar**: Visual indicator of operation progress
+- **ETA Display**: Estimated time remaining for large operations
+- **File Count**: Shows total files found and processed
+- **Status Updates**: Real-time operation feedback
+
+### 🔄 UNDO/REDO SYSTEM
+- **Multiple Levels**: Undo/redo multiple operations
+- **Stack Management**: Maintains history of rename sessions
+- **Visual Indicators**: Button states show available actions
+- **Safe Recovery**: Restores files to their original names/locations
+
+### 🎨 THEME SYSTEM
+- **Dark Theme**: Easy on eyes, better for low-light environments
+- **Light Theme**: Classic appearance, better for bright rooms
+- **Persistent**: Theme preference maintained during session
+
+---
+
+## MENU & ADDITIONAL OPTIONS
+
+### ☰ TOP-RIGHT MENU
+- **About**: Opens GitHub project page
+- **BR Pro**: Opens tutorial video/documentation
+- **Contact**: Opens developer contact page
+
+### 🔧 UTILITY BUTTONS
+- **🌙/🔅 Theme Toggle**: Switch between dark/light modes
+- **🔄 Reset**: Clear all fields and start fresh
+- **Hover Tooltips**: Comprehensive help on every element
+
+---
+
+## TROUBLESHOOTING
+
+### ❌ Common Issues & Solutions
+
+**"No files found matching your criteria"**
+- Check file type filter settings
+- Verify folder contains files of selected types
+- Ensure "Include Subfolders" is enabled if needed
+
+**"Failed to rename" errors**
+- File might be open in another program
+- Check file permissions
+- Try using "Save in Folder" option
+
+**Preview not updating**
+- Ensure folder is selected
+- Check filter criteria aren't too restrictive
+- Use Reset button and reconfigure
+
+**Undo/Redo not working**
+- Only available after successful rename operations
+- Previous sessions cannot be undone after app restart
+
+---
+
+## SUPPORT & RESOURCES
+
+### 📚 Learning Resources
+- **Video Tutorial**: [YouTube Guide](https://www.youtube.com/watch?v=urX4OQsfAPU)
+- **GitHub Documentation**: Complete feature documentation
+- **Issue Tracker**: Report bugs or request features
+
+### 🆘 Getting Help
+1. **Check Preview**: Always verify changes before applying
+2. **Use Save Mode**: Test with "Save in Folder" enabled
+3. **Start Small**: Try with few files first
+4. **Contact Support**: Use menu option for direct help
+
+### 🔒 Safety Notes
+- Application does not modify system files by default
+- "Skip System Files" option protects hidden files
+- Undo functionality provides safety net
+- Always maintain backups of critical data
+
+---
+
+## SYSTEM REQUIREMENTS
+
+- **Windows 7** or newer (optimized for Windows 10/11)
+- **10MB** free disk space
+- **No additional software** required (standalone executable)
+
+---
+
+**Happy Renaming!** 🚀
+
+For updates and latest features, visit: [https://github.com/NihadSquare/BatchRenamer/tree/v2.6.2](https://github.com/NihadSquare/BatchRenamer/tree/v2.6.2)
