@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 AK Nihad
+Copyright (c) 2023-2025 Nihad Square
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,29 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+## Additional Notes for Batch Renamer v2.6.2
+
+### Third-Party Components
+This software may include third-party libraries and components that are subject to their own licenses:
+- **Python** (PSF License)
+- **Tkinter** (Python standard library)
+- **Pillow** (HPND License) - for icon handling in Python version
+
+### Distribution Terms
+- You may distribute compiled versions of this software
+- Modified versions must maintain this license notice
+- Commercial use is permitted
+- No warranty provided - users assume all risk
+
+### Attribution
+While not required, we appreciate attribution through:
+- Mention in your project's documentation
+- Link to the original repository: https://github.com/NihadSquare/BatchRenamer
+
+### Trademark Notice
+"Batch Renamer" is a trademark of Nihad Square. The name and logo may not be used to endorse or promote products derived from this software without specific prior written permission.
+
+For questions about this license, please contact: https://nihad.carrd.co
