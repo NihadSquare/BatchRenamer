@@ -77,19 +77,6 @@
 2. **Double-click** the executable to launch
 3. **Start renaming** - no installation needed!
 
-### 🔧 For Developers
-```bash
-# Clone the repository
-git clone https://github.com/NihadSquare/BatchRenamer.git
-cd BatchRenamer
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the Python version
-python BatchRenamer_v2.6.2.py
-```
-
 ### 📋 System Requirements
 - **Windows 7+** (optimized for Windows 10/11)
 - **10MB free space**
